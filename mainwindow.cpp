@@ -10,6 +10,7 @@
 #include <QString>
 #include <QTextStream>
 
+//test github
 InstallApkThread::InstallApkThread(QObject *parent)
     :QThread(parent)
 {
@@ -48,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) :
 
     m_installThread = NULL;
     connect(ui->pushButton, SIGNAL(clicked()), this, SLOT(installApk()));
-
     connect(ui->pickFileBtn, SIGNAL(clicked()), this, SLOT(openFileDialog()));
 }
 
